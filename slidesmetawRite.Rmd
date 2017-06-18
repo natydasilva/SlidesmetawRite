@@ -1,0 +1,113 @@
+---
+title: <span style="color:#88398A"> metawRite\:Review, write and update meta-analysis results
+ </span>
+author: "Natalia da Silva"
+date: "July 4th, 2017"
+output: ioslides_presentation
+#bibliography: bibliophd.bib
+---
+<!-- # R-Ladies ggplot2 theme -->
+<!-- # main purple color: #88398A -->
+<!-- # grey color: #D3D3D3 -->
+<!-- # black color: #181818 -->
+<!-- # white color: #FFFFFF -->
+<!-- # dark purple color: #562457 -->
+<!-- # font Helvetica Neue -->
+
+ <style>
+ .title-slide {
+    # background-image: url(paint1.png);
+     background-repeat: no-repeat;
+     padding:40px;
+     background-size: 1000px 800px;
+   }
+   </style>
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+## <span style="color:#88398A">Structure</span> 
+-Motivation
+
+-LSR
+
+-metawRite
+
+-Future Work
+
+## <span style="color:#88398A">Motivation</span> 
+
+- Systematic reviews are used to understand how treatments are effective and to design disease control policies
+- Systematic reviews often include a meta-analysis that summarizes the findings of multiple studies. 
+
+-Reviews should be updated quickly as new scientific information becomes available
+
+-Living systematic reviews have been proposed as a new approach to dealing with this problem.
+
+## <span style="color:#88398A">LSR</span> 
+
+-Enable rapid updating of systematic reviews as new research becomes available
+
+-Ensuring a transparent process
+
+-Reproducible review
+
+## <span style="color:#88398A">Our approach to LSR</span> 
+
+-Implemented in an R package named metawRite
+
+-Goal is to combine writing and analysis of the review, allowing versioning and updating in an R package . 
+
+
+metawRite package will allow an easy and effective way to display a living systematic review available in a web-based display. 
+
+
+## <span style="color:#88398A">Main tasks in a LSR</span> 
+
+
+Main tasks to have an effective living systematic review:
+
+-Ability to produce dynamic reports
+
+-Availability online with an interface that enables end users to understand the data
+
+-Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).
+
+
+<!-- metawRite package will cover these three task integrated in a friendly web based environment for the final user. This package is not a new meta-analysis package instead will be flexible enough to read different output models from the most used meta-analysis packages in R (metafor (Viechtbauer 2010), meta (Schwarzer 2007) among others), organize the information and display the results in an user driven interactive dashboard. The main function of this package will display a modern web-based application for update a living systematic review. This package combines the power of R, shiny (Chang et al. 2017) and knitr (Xie 2015) to get a dynamic reports and up to date meta-analysis results remaining user friendly. The package has the potential to be used by a large number of groups that conduct and update systematic review such as What Works clearinghouse (https://ies.ed.gov/ncee/WWC/) which reviews education interventions, Campbell Collaboration https://www.campbellcollaboration.org that includes reviews on topics such as social and criminal justice issues and many other social science topics, the Collaboration for Environment Evidence (http://www.environmentalevidence.org) and food production and security (http://www.syreaf.org) among others. -->
+<!-- References Chang, Winston, Joe Cheng, JJ Allaire, Yihui Xie, and Jonathan McPherson. 2017. Shiny: Web Application Framework for R. https://CRAN.R-project.org/package=shin -->
+
+
+## <span style="color:#26734d">Panel 1, protocol </span>
+```{r}
+library("vembedr")
+```
+<iframe src="https://player.vimeo.com/video/222047295" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+##<span style="color:#88398A">Panel 2, PubMed search</span>  
+<iframe src="https://player.vimeo.com/video/222047457" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+## <span style="color:#88398A"> Panel 3, PubAg search</span> 
+
+
+## <span style="color:#88398A"> Panel 4, LSR report</span> 
+
+## <span style="color:#88398A">Panel 5, Pairwise meta-analysis</span> 
+
+## <span style="color:#88398A"> Panel 6 Network meta-analysis </span> 
+
+## <span style="color:#88398A"> Future work </span> 
+
+
+
+
+
+<!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
+<!-- 2.  Slides: https://github.com/natydasilva/SlidesPPforestsimulations -->
+<!-- 3.  Viz : https://natydasilva.shinyapps.io/shinyppforest -->
+
+
+
+
