@@ -159,7 +159,7 @@ Our approach to LSR</span></h2></hgroup><article  id="our-approach-to-lsr">
 
 <p>-Goal is to combine writing and analysis of the review, allowing versioning and updating in an R package .</p>
 
-<p>metawRite package will allow an easy and effective way to display a living systematic review available in a web-based display.</p>
+<p><strong>metawRite</strong> package will allow an easy and effective way to display a living systematic review available in a web-based display.</p>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Main tasks in a LSR</span></h2></hgroup><article  id="main-tasks-in-a-lsr">
@@ -172,11 +172,29 @@ Main tasks in a LSR</span></h2></hgroup><article  id="main-tasks-in-a-lsr">
 
 <p>-Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).</p>
 
+</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
+Functionalities </span></h2></hgroup><article  id="functionalities">
+
+<ul>
+<li>Helper functions to run all the possible models, restructure the data to be used in a web app</li>
+<li>Translate some plots from <strong>metafor</strong> to ggplot2 framework</li>
+<li>Shiny app function to write, review and update LSR</li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
+Functionalities </span></h2></hgroup><article  id="functionalities-1">
+
+<p>Main function runs a shiny app with</p>
+
+<pre class = 'prettyprint lang-r'>upreportdashoard(initialprotocol = TRUE, initialreport = TRUE,
+                 pair = FALSE, net = FALSE, data = NULL, 
+                 outputformat = &quot;pdf&quot;)</pre>
+
 <!-- metawRite package will cover these three task integrated in a friendly web based environment for the final user. This package is not a new meta-analysis package instead will be flexible enough to read different output models from the most used meta-analysis packages in R (metafor (Viechtbauer 2010), meta (Schwarzer 2007) among others), organize the information and display the results in an user driven interactive dashboard. The main function of this package will display a modern web-based application for update a living systematic review. This package combines the power of R, shiny (Chang et al. 2017) and knitr (Xie 2015) to get a dynamic reports and up to date meta-analysis results remaining user friendly. The package has the potential to be used by a large number of groups that conduct and update systematic review such as What Works clearinghouse (https://ies.ed.gov/ncee/WWC/) which reviews education interventions, Campbell Collaboration https://www.campbellcollaboration.org that includes reviews on topics such as social and criminal justice issues and many other social science topics, the Collaboration for Environment Evidence (http://www.environmentalevidence.org) and food production and security (http://www.syreaf.org) among others. -->
 
 <!-- References Chang, Winston, Joe Cheng, JJ Allaire, Yihui Xie, and Jonathan McPherson. 2017. Shiny: Web Application Framework for R. https://CRAN.R-project.org/package=shin -->
 
-</article></slide><slide class=''><hgroup><h2><span style="color:#26734d">
+</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Panel 1, protocol </span></h2></hgroup><article  id="panel-1-protocol">
 
 <iframe src="https://player.vimeo.com/video/222047295" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
@@ -193,17 +211,33 @@ Panel 2, PubMed search</span></h2></hgroup><article  id="panel-2-pubmed-search">
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
  Panel 3, PubAg search</span></h2></hgroup><article  id="panel-3-pubag-search">
 
+<iframe src="https://player.vimeo.com/video/222141753" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+</iframe>
+
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
  Panel 4, LSR report</span></h2></hgroup><article  id="panel-4-lsr-report">
+
+<iframe src="https://player.vimeo.com/video/222141879" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+</iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Panel 5, Pairwise meta-analysis</span></h2></hgroup><article  id="panel-5-pairwise-meta-analysis">
 
-</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
- Panel 6 Network meta-analysis </span></h2></hgroup><article  id="panel-6-network-meta-analysis">
+<iframe src="https://player.vimeo.com/video/222141966" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
+
+</iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
- Future work </span></h2></hgroup><article  id="future-work">
+ Future work</span></h2></hgroup><article  id="future-work">
+
+<ul>
+<li>For each of the most used meta-analysis packages have helper functions to run all the models and structure data</li>
+<li>Translate to ggplot2 the metafor base plots (at least the forest plot and funnel plot)</li>
+<li>Instead of save locally all the protocol and reports have all the infor in separate GitHub repos with user login id.</li>
+<li>The latest systematic review will be available online in a server</li>
+</ul>
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
 
