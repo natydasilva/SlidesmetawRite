@@ -2,7 +2,7 @@
 title: <span style="color:#88398A"> metawRite\:Review, write and update meta-analysis results
  </span>
 author: "Natalia da Silva"
-date: "July 4th, 2017"
+date: "July 5th, 2017"
 output: ioslides_presentation
 #bibliography: bibliophd.bib
 ---
@@ -30,21 +30,21 @@ knitr::opts_chunk$set(echo = FALSE)
 ## <span style="color:#88398A">Structure</span> 
 - Motivation
 
-- what are living systematic reviews (LSR)?
+- What are living systematic reviews (LSR)?
 
-- our solution: `metawRite`
+- Our solution: `metawRite`
 
 - Future Work
 
 ## <span style="color:#88398A">Systematic reviews ... </span> 
 
--  summarize findings of multiple studies on a specific topic/problem,  often include a meta-analysis 
+-  Summarize findings of multiple studies on a specific topic/problem,  often include a meta-analysis 
 
--  used to understand which treatments are effective and how different treatments compare
+-  Used to understand which treatments are effective and how different treatments compare
 
-- used to inform disease control policies
+- Used to inform disease control policies
 
-- ***have to be updated*** as new scientific information becomes available
+- ***Have to be updated*** as new scientific information becomes available
 
 **Living systematic reviews** have been proposed as an approach to speed up the update
 
@@ -58,11 +58,11 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## <span style="color:#88398A">Main tasks in a LSR</span> 
 
-- ability to produce dynamic reports
+- Ability to produce dynamic reports
 
--  online availability with an interface that enables end users to understand the data
+-  Online availability with an interface that enables end users to understand the data
 
-- ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).
+- Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).
 
 ## <span style="color:#88398A">Our approach to LSR</span> 
 
