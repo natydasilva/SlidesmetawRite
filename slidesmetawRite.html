@@ -131,10 +131,10 @@ Structure</span></h2></hgroup><article  id="structure">
 </ul>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
-Systematic reviews &#8230; </span></h2></hgroup><article  id="systematic-reviews-...">
+Motivation </span></h2></hgroup><article  id="motivation">
 
 <ul>
-<li><p>Summarize findings of multiple studies on a specific topic/problem, often include a meta-analysis</p></li>
+<li><p>Systematic reviews: Summarize findings of multiple studies on a specific topic/problem, often include a meta-analysis</p></li>
 <li><p>Used to understand which treatments are effective and how different treatments compare</p></li>
 <li><p>Used to inform disease control policies</p></li>
 <li><p><strong><em>Have to be updated</em></strong> as new scientific information becomes available</p></li>
@@ -155,8 +155,8 @@ LSR</span></h2></hgroup><article  id="lsr">
 Main tasks in a LSR</span></h2></hgroup><article  id="main-tasks-in-a-lsr">
 
 <ul>
-<li><p>Ability to produce dynamic reports</p></li>
-<li><p>Online availability with an interface that enables end users to understand the data</p></li>
+<li><p>Ability to produce dynamic reports.</p></li>
+<li><p>Online availability with an interface that enables end users to understand the data.</p></li>
 <li><p>Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).</p></li>
 </ul>
 
@@ -164,8 +164,8 @@ Main tasks in a LSR</span></h2></hgroup><article  id="main-tasks-in-a-lsr">
 Our approach to LSR</span></h2></hgroup><article  id="our-approach-to-lsr">
 
 <ul>
-<li><p>Implemented in an R package named <strong>metawRite</strong></p></li>
-<li><p>Goal is to combine writing and analysis of the review, allowing versioning and updating in an R package .</p></li>
+<li><p>Implemented in an R package named <strong>metawRite</strong>.</p></li>
+<li><p>The goal is to combine writing and analysis of the review, allowing versioning and updating in an R package.</p></li>
 </ul>
 
 <p><strong>metawRite</strong> package allows an easy and effective way to display a living systematic review available in a web-based display.</p>
@@ -174,17 +174,17 @@ Our approach to LSR</span></h2></hgroup><article  id="our-approach-to-lsr">
 Functionality </span></h2></hgroup><article  id="functionality">
 
 <ul>
-<li>Helper functions to run meta-analysis models, restructure the data to be used in a web app</li>
-<li>Shiny app function to write, review and update LSR</li>
-<li>Translate some plots from <strong>metafor</strong> to ggplot2 framework</li>
+<li>Helper functions to run meta-analysis models and restructure the data to be used in a web app.</li>
+<li>Shiny app function to write, review and update LSR.</li>
+<li>Translate some plots from <strong>metafor</strong> to ggplot2 framework.</li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Functionalities </span></h2></hgroup><article  id="functionalities">
 
-<p>Main function runs a shiny app with</p>
+<p>The main function runs a shiny app with</p>
 
-<pre class = 'prettyprint lang-r'>upreportdashoard(initialprotocol = TRUE, initialreport = TRUE,
+<pre class = 'prettyprint lang-r'>upreportdashboard(initialprotocol = TRUE, initialreport = TRUE,
                  pair = TRUE, net = FALSE, data = initialdt, 
                  outputformat = &quot;pdf&quot;)</pre>
 

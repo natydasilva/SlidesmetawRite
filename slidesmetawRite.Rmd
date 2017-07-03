@@ -36,9 +36,9 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Future Work
 
-## <span style="color:#88398A">Systematic reviews ... </span> 
+## <span style="color:#88398A">Motivation  </span> 
 
--  Summarize findings of multiple studies on a specific topic/problem,  often include a meta-analysis 
+- Systematic reviews: Summarize findings of multiple studies on a specific topic/problem,  often include a meta-analysis 
 
 -  Used to understand which treatments are effective and how different treatments compare
 
@@ -58,35 +58,32 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## <span style="color:#88398A">Main tasks in a LSR</span> 
 
-- Ability to produce dynamic reports
+- Ability to produce dynamic reports.
 
--  Online availability with an interface that enables end users to understand the data
+-  Online availability with an interface that enables end users to understand the data.
 
 - Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).
 
 ## <span style="color:#88398A">Our approach to LSR</span> 
 
-- Implemented in an R package named **metawRite**
+- Implemented in an R package named **metawRite**.
 
-- Goal is to combine writing and analysis of the review, allowing versioning and updating in an R package . 
-
+- The goal is to combine writing and analysis of the review, allowing versioning and updating in an R package. 
 
 **metawRite** package allows an easy and effective way to display a living systematic review available in a web-based display. 
 
-
-
 ## <span style="color:#88398A">Functionality </span>
 
-- Helper functions to run meta-analysis models, restructure the data to be used in a web app
-- Shiny app function to write, review and update LSR
-- Translate some plots from **metafor** to ggplot2 framework
+- Helper functions to run meta-analysis models and restructure the data to be used in a web app.
+- Shiny app function to write, review and update LSR.
+- Translate some plots from **metafor** to ggplot2 framework.
 
 ## <span style="color:#88398A">Functionalities </span>
 
-Main function runs a shiny app with
+The main function runs a shiny app with
 
 ```{r echo=TRUE, eval =FALSE}
-upreportdashoard(initialprotocol = TRUE, initialreport = TRUE,
+upreportdashboard(initialprotocol = TRUE, initialreport = TRUE,
                  pair = TRUE, net = FALSE, data = initialdt, 
                  outputformat = "pdf")
 ```
@@ -118,12 +115,7 @@ library("vembedr")
 - Expand functionality to include more meta-analysis packages 
 - Include summary results for network meta-analysis.
 -  Expand file-structure for reporting and report-writing GitHub repository (separate for each LSR with user login id for collaborators).
-- Read-access/interaction mode to latest systematic review  available online in a server.
-
-
-
-
-
+- Read-access/interaction mode to latest systematic review available online in a server.
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
 <!-- 2.  Slides: https://github.com/natydasilva/SlidesPPforestsimulations -->
