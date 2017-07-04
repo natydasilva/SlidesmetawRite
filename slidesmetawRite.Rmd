@@ -71,21 +71,32 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## <span style="color:#88398A">Our approach to LSR</span> 
 
-- Implemented in an R package named **metawRite**.
+- Implemented in an R package named `metawRite`.
 
 - The goal is to combine writing and analysis of the review, allowing versioning and updating. 
 
-**metawRite** package allows an easy and effective way to display a living systematic review available in a web-based display. 
+`metawRite` package allows an easy and effective way to display a living systematic review available in a web-based display. 
 
 ## <span style="color:#88398A">Functionalities </span>
 
 - Helper functions to run meta-analysis models and restructure the data to be used in a web app.
+
 - Shiny app function to write, review and update LSR.
-- Translate some plots from **metafor** to ggplot2 framework.
+
+- Translate some plots from `metafor` to `ggplot2` framework.
 
 ## <span style="color:#88398A">Shiny app</span>
 
-The main function runs a shiny app with
+The main function runs a shiny app using **shinydashboard** and **shinyjs**
+
+- ***Protocol***: to write the protocol in Rmd
+- ***PubMed***: search papers in PubMed (NCBI)
+<!-- National Center for Biotechnology Information -->
+<!-- PubMed comprises more than 27 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full-text content from PubMed Central and publisher web sites.(National Library of Medicine National Institutes of Health)  -->
+- ***PubAg***: search papers in PubAg (USDA)
+- ***LSR report***: to write the LSR report
+- ***Pairwise***: pairwise meta-analysis summary 
+- ***Network***: network meta-analysis results 
 
 ```{r echo=TRUE, eval =FALSE}
 upreportdashboard(initialprotocol = TRUE, initialreport = TRUE,
@@ -97,31 +108,38 @@ upreportdashboard(initialprotocol = TRUE, initialreport = TRUE,
 <!-- References Chang, Winston, Joe Cheng, JJ Allaire, Yihui Xie, and Jonathan McPherson. 2017. Shiny: Web Application Framework for R. https://CRAN.R-project.org/package=shin -->
 
 
-## <span style="color:#88398A">Panel 1, protocol </span>
+## <span style="color:#88398A">Protocol </span>
 ```{r}
 library("vembedr")
 ```
 <iframe src="https://player.vimeo.com/video/222047295" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 
-##<span style="color:#88398A">Panel 2, PubMed search</span>  
+##<span style="color:#88398A">PubMed search</span>  
 <iframe src="https://player.vimeo.com/video/222047457" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## <span style="color:#88398A"> Panel 3, PubAg search</span> 
+## <span style="color:#88398A"> PubAg search</span> 
 <iframe src="https://player.vimeo.com/video/222141753" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## <span style="color:#88398A"> Panel 4, LSR report</span> 
+## <span style="color:#88398A">  LSR report</span> 
 <iframe src="https://player.vimeo.com/video/222141879" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-## <span style="color:#88398A">Panel 5, Pairwise meta-analysis</span> 
+## <span style="color:#88398A"> Pairwise meta-analysis</span> 
 <iframe src="https://player.vimeo.com/video/222141966" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 ## <span style="color:#88398A"> Future work</span> 
-- Expand functionality to include more meta-analysis packages 
+- Expand functionality to include more meta-analysis packages.
+
 - Include summary results for network meta-analysis.
+
 -  Expand file-structure for reporting and report-writing GitHub repository (separate for each LSR with user login id for collaborators).
 
 - Read-access/interaction mode to latest systematic review available online in a server.
+
+## <span style="color:#88398A"> </span> 
+
+
+***THANK YOU!***
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
 <!-- 2.  Slides: https://github.com/natydasilva/SlidesPPforestsimulations -->

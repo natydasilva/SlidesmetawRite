@@ -164,32 +164,41 @@ Main tasks in a LSR</span></h2></hgroup><article  id="main-tasks-in-a-lsr">
 <ul>
 <li><p>Ability to produce dynamic reports.</p></li>
 <li><p>Online availability with an interface that enables end users to understand the data.</p></li>
-<li><p>Ability to efficiently update the review and any meta-analysis with new research (Elliott et al. 2014).</p></li>
+<li><p>Ability to efficiently update the review and any meta-analysis when new research is available (Elliott et al. 2014).</p></li>
 </ul>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Our approach to LSR</span></h2></hgroup><article  id="our-approach-to-lsr">
 
 <ul>
-<li><p>Implemented in an R package named <strong>metawRite</strong>.</p></li>
+<li><p>Implemented in an R package named <code>metawRite</code>.</p></li>
 <li><p>The goal is to combine writing and analysis of the review, allowing versioning and updating.</p></li>
 </ul>
 
-<p><strong>metawRite</strong> package allows an easy and effective way to display a living systematic review available in a web-based display.</p>
-
-</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
-Functionality </span></h2></hgroup><article  id="functionality">
-
-<ul>
-<li>Helper functions to run meta-analysis models and restructure the data to be used in a web app.</li>
-<li>Shiny app function to write, review and update LSR.</li>
-<li>Translate some plots from <strong>metafor</strong> to ggplot2 framework.</li>
-</ul>
+<p><code>metawRite</code> package allows an easy and effective way to display a living systematic review available in a web-based display.</p>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
 Functionalities </span></h2></hgroup><article  id="functionalities">
 
-<p>The main function runs a shiny app with</p>
+<ul>
+<li><p>Helper functions to run meta-analysis models and restructure the data to be used in a web app.</p></li>
+<li><p>Shiny app function to write, review and update LSR.</p></li>
+<li><p>Translate some plots from <code>metafor</code> to <code>ggplot2</code> framework.</p></li>
+</ul>
+
+</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
+Shiny app</span></h2></hgroup><article  id="shiny-app">
+
+<p>The main function runs a shiny app using <strong>shinydashboard</strong> and <strong>shinyjs</strong></p>
+
+<ul>
+<li><strong><em>Protocol</em></strong>: to write the protocol in Rmd</li>
+<li><strong><em>PubMed</em></strong>: search papers in PubMed (NCBI) <!-- National Center for Biotechnology Information --> <!-- PubMed comprises more than 27 million citations for biomedical literature from MEDLINE, life science journals, and online books. Citations may include links to full-text content from PubMed Central and publisher web sites.(National Library of Medicine National Institutes of Health)  --></li>
+<li><strong><em>PubAg</em></strong>: search papers in PubAg (USDA)</li>
+<li><strong><em>LSR report</em></strong>: to write the LSR report</li>
+<li><strong><em>Pairwise</em></strong>: pairwise meta-analysis summary</li>
+<li><strong><em>Network</em></strong>: network meta-analysis results</li>
+</ul>
 
 <pre class = 'prettyprint lang-r'>upreportdashboard(initialprotocol = TRUE, initialreport = TRUE,
                  pair = TRUE, net = FALSE, data = initialdt, 
@@ -200,35 +209,35 @@ Functionalities </span></h2></hgroup><article  id="functionalities">
 <!-- References Chang, Winston, Joe Cheng, JJ Allaire, Yihui Xie, and Jonathan McPherson. 2017. Shiny: Web Application Framework for R. https://CRAN.R-project.org/package=shin -->
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
-Panel 1, protocol </span></h2></hgroup><article  id="panel-1-protocol">
+Protocol </span></h2></hgroup><article  id="protocol">
 
 <iframe src="https://player.vimeo.com/video/222047295" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
 </iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
-Panel 2, PubMed search</span></h2></hgroup><article  id="panel-2-pubmed-search">
+PubMed search</span></h2></hgroup><article  id="pubmed-search">
 
 <iframe src="https://player.vimeo.com/video/222047457" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
 </iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
- Panel 3, PubAg search</span></h2></hgroup><article  id="panel-3-pubag-search">
+ PubAg search</span></h2></hgroup><article  id="pubag-search">
 
 <iframe src="https://player.vimeo.com/video/222141753" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
 </iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
- Panel 4, LSR report</span></h2></hgroup><article  id="panel-4-lsr-report">
+ LSR report</span></h2></hgroup><article  id="lsr-report">
 
 <iframe src="https://player.vimeo.com/video/222141879" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
 </iframe>
 
 </article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
-Panel 5, Pairwise meta-analysis</span></h2></hgroup><article  id="panel-5-pairwise-meta-analysis">
+ Pairwise meta-analysis</span></h2></hgroup><article  id="pairwise-meta-analysis">
 
 <iframe src="https://player.vimeo.com/video/222141966" width="640" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen>
 
@@ -238,11 +247,16 @@ Panel 5, Pairwise meta-analysis</span></h2></hgroup><article  id="panel-5-pairwi
  Future work</span></h2></hgroup><article  id="future-work">
 
 <ul>
-<li>Expand functionality to include more meta-analysis packages</li>
-<li>Include summary results for network meta-analysis.</li>
-<li>Expand file-structure for reporting and report-writing GitHub repository (separate for each LSR with user login id for collaborators).</li>
-<li>Read-access/interaction mode to latest systematic review available online in a server.</li>
+<li><p>Expand functionality to include more meta-analysis packages.</p></li>
+<li><p>Include summary results for network meta-analysis.</p></li>
+<li><p>Expand file-structure for reporting and report-writing GitHub repository (separate for each LSR with user login id for collaborators).</p></li>
+<li><p>Read-access/interaction mode to latest systematic review available online in a server.</p></li>
 </ul>
+
+</article></slide><slide class=''><hgroup><h2><span style="color:#88398A">
+ </span></h2></hgroup><article  id="section">
+
+<p><strong><em>THANK YOU!</em></strong></p>
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
 
