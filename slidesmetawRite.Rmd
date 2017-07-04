@@ -67,7 +67,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 -  Online availability with an interface that enables end users to understand the data.
 
-- Ability to efficiently update the review (and any meta-analysis) with new research (Elliott et al. 2014).
+- Ability to efficiently update the review and any meta-analysis when new research is available (Elliott et al. 2014).
 
 ## <span style="color:#88398A">Our approach to LSR</span> 
 
@@ -77,13 +77,13 @@ knitr::opts_chunk$set(echo = FALSE)
 
 **metawRite** package allows an easy and effective way to display a living systematic review available in a web-based display. 
 
-## <span style="color:#88398A">Functionality </span>
+## <span style="color:#88398A">Functionalities </span>
 
 - Helper functions to run meta-analysis models and restructure the data to be used in a web app.
 - Shiny app function to write, review and update LSR.
 - Translate some plots from **metafor** to ggplot2 framework.
 
-## <span style="color:#88398A">Functionalities </span>
+## <span style="color:#88398A">Shiny app</span>
 
 The main function runs a shiny app with
 
@@ -120,6 +120,7 @@ library("vembedr")
 - Expand functionality to include more meta-analysis packages 
 - Include summary results for network meta-analysis.
 -  Expand file-structure for reporting and report-writing GitHub repository (separate for each LSR with user login id for collaborators).
+
 - Read-access/interaction mode to latest systematic review available online in a server.
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
