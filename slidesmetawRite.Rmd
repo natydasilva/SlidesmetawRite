@@ -38,17 +38,22 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## <span style="color:#88398A">Motivation  </span> 
 
-- Systematic reviews: Summarize findings of multiple studies on a specific topic/problem,  often include a meta-analysis 
+- Systematic reviews: summarize findings of multiple studies on a specific topic/problem, often include a meta-analysis. 
 
--  Used to understand which treatments are effective and how different treatments compare
+<!-- - Meta-analysis  statistical methods for aggregating and comparing the results from related studies in a systematic manner.  -->
 
-- Used to inform disease control policies
+-  Used to understand which treatments are effective and how different treatments compare. 
 
-- ***Have to be updated*** as new scientific information becomes available
+- Used to inform disease control policies.
+
+- ***Have to be updated*** as new scientific information becomes available.
 
 **Living systematic reviews** have been proposed as an approach to speed up the update
 
-## <span style="color:#88398A">LSR</span> 
+## <span style="color:#88398A">Living systematic reviews (LSR)</span> 
+
+<!-- **LSR is a systematic review which is continually updated, incorporating relevant new evidence as it becomes available** -->
+
 
 - Enable ***rapid update*** of systematic reviews as new research becomes available
 
@@ -68,7 +73,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - Implemented in an R package named **metawRite**.
 
-- The goal is to combine writing and analysis of the review, allowing versioning and updating in an R package. 
+- The goal is to combine writing and analysis of the review, allowing versioning and updating. 
 
 **metawRite** package allows an easy and effective way to display a living systematic review available in a web-based display. 
 
