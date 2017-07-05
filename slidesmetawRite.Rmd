@@ -139,7 +139,8 @@ library("vembedr")
 ## <span style="color:#88398A"> </span> 
 
 
-***THANK YOU!***
+
+<center>THANK YOU! </center>
 
 <!-- 1.  PPforest package:https://github.com/natydasilva/PPforest -->
 <!-- 2.  Slides: https://github.com/natydasilva/SlidesPPforestsimulations -->
